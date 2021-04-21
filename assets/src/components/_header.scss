@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+  flex: 0 0 auto;
+  height: 140px;
+  background: #132b46;
+
+  &__text {
+    position: absolute;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .custom-shape-divider-bottom-1619031815 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1619031815 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 52px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1619031815 .shape-fill {
+    fill: #ffffff;
+  }
+}

@@ -1,0 +1,30 @@
+// Variables and fonts download
+
+$fa-font-path:        "../fonts/fa" !default; // change default directory to ../fonts/fa
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+$main_font: 'Open Sans', sans-serif;
+$title_font: 'Open Sans', sans-serif;
+
+/* default values
+1em is  16px
+h1 is   32px   (2em)
+h2 is   24px (1.5em)
+h3 is 20.8px (1.3em)
+h4 is   16px   (1em)
+h5 is 12.8px (0.8em)
+h6 is 11.2px (0.7em)
+*/

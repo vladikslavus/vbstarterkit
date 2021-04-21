@@ -1,0 +1,179 @@
+// I'm gonna use Mobile first!
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: $main_font;
+	font-size: 16px;
+	color: #222;
+	box-sizing: border-box;
+
+	/* delete outline */
+	&:visited,
+	&:focus,
+	&:active,
+	&:hover {
+		outline: 0 none !important;
+	}
+}
+html {
+	min-height: 100%;
+	height: 100%;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: hidden; // has to be changed to auto in preloader.js !!!
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	background-color: #fff;
+	justify-content: flex-start;
+	background: transparent;
+}
+
+p,
+ul {
+	margin-top: 10px;
+}
+ul {
+	list-style: disc;
+	padding-left: 1.5rem;
+}
+
+.page {
+	position: relative;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 100vh;
+	background-color: #fff;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	justify-content: space-between;
+	// align-items: center;
+	text-align: center;
+	padding: 25px 0 0;
+
+	.heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: transparent;
+
+		&::before {
+			content: "";
+			background-image: url(../img/my-photo.png);
+			background-repeat: no-repeat;
+			background-position: 0% 0%;
+			width: 100px;
+			height: 100px;
+			transform: scale(0.8);
+			animation: my-photo-scale 4s ease-out infinite;
+		}
+		@keyframes my-photo-scale {
+			0% {
+				transform: scale(0.8);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(0.8);
+			}
+		}
+
+		h1 {
+			font-size: 2.4rem;
+			font-weight: 900;
+
+			small {
+				white-space: nowrap;
+				display: block;
+
+				&:first-child {
+					font-size: 1.2rem;
+					margin-top: 0;
+				}
+				&:nth-child(2) {
+					font-size: 0.8rem;
+					color: #535c68;
+					letter-spacing: 0.5rem;
+					margin-top: 25px;
+				}
+			}
+		}
+	}
+
+	.description {
+		max-width: 100%;
+		margin-top: 25px;
+		padding: 5px 25px;
+		background: #f8f8f8;
+		box-shadow: none;
+
+		p {
+			font-size: 1rem;
+
+			a {
+				display: block;
+				white-space: nowrap;
+				margin-top: 16px;
+			}
+		}
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) {
+	.main {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 25px 0;
+
+		.heading {
+			h1 {
+				font-size: 3.5rem;
+			}
+		}
+		.description {
+			max-width: 90%;
+			padding: 5px 25px;
+			border-radius: 10px;
+			background: #fdfdfd;
+			box-shadow: 0px 0px 20px rgba(9, 21, 34, 0.2);
+
+			p {
+				a {
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media screen and (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media screen and (min-width: 1400px) {
+}

@@ -1,0 +1,36 @@
+// Import styles
+
+// preloader
+@import "../components/preloader";
+
+// import Bootstrap 5.0.0-beta2 SCSS files
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
+
+// WOW.js animation
+@import "../../../node_modules/wow.js/css/libs/animate.css";
+/* it's more faster styles, choose the one you like more
+@import "../../../node_modules/animate.css/animate.css";
+ */
+
+// custom scroll bar styles
+@import "../../../node_modules/simplebar/dist/simplebar";
+
+// Swiper
+@import "../../../node_modules/swiper/swiper-bundle.css";
+
+// Highlight.js
+@import "../../../node_modules/highlight.js/scss/atelier-heath-light";
+
+
+
+@import "variables"; // // define variables
+
+@import "dev"; // auxiliary developement mode styles
+
+// components style
+@import "../components/general";
+
+@import "../components/header";
+
+@import "../components/footer";
+
