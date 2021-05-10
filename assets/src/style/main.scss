@@ -1,7 +1,7 @@
 // Import styles
 
 // preloader
-@import "../components/preloader";
+@import "../components/preloader/preloader";
 
 // import Bootstrap 5.0.0-beta2 SCSS files
 @import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
@@ -30,7 +30,7 @@
 // components style
 @import "../components/general";
 
-@import "../components/header";
+@import "../components/header/header";
 
-@import "../components/footer";
+@import "../components/footer/footer";
 

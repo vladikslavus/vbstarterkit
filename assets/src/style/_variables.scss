@@ -9,12 +9,12 @@ $fa-font-path:        "../fonts/fa" !default; // change default directory to ../
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-Regular.ttf);
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Open Sans Light';
-    src: url(../fonts/OpenSans-Light.ttf);
+    src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
 }
 $main_font: 'Open Sans', sans-serif;
 $title_font: 'Open Sans', sans-serif;

@@ -1,7 +1,7 @@
 // Webpack entry point
 
 // preloader
-import './preloader.js';
+import '../components/preloader/preloader.js';
 
 // import bootstrap from "bootstrap"; // import Bootstrap 5.0.0-beta2
 const bootstrap = require('bootstrap');
@@ -48,4 +48,4 @@ import charSortBytData from "./vblib/sortchart";
 import { FlipDown } from './vblib/flip-down.js';
 
 // Babel testing
-import './tests.js';
+import './babel-test.js';
